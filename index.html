@@ -78,6 +78,32 @@
       color: #000;
       font-size: 1.1em;
     }
+    /* MEDIA QUERY FOR SMALL SCREENS */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+        margin-bottom: 30px;
+    }
+
+    .menu {
+        padding: 15px;
+    }
+
+    .menu h2 {
+        font-size: 1.3em;
+    }
+
+    .menu-item {
+        font-size: 0.95em;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .price {
+        align-self: flex-end;
+    }
+}
   </style>
 </head>
 
@@ -230,3 +256,4 @@
     </main>
 </body>
 </html>
+
