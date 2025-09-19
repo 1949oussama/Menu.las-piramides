@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: #fff;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px; /* smaller space from page top */
+    }
+
+
+    header img {
+        max-width: 320px;  /* bigger logo size */
+        width: 100%;
+        height: auto;
+        margin-bottom: 35px; /* space below logo */
+    }
+    h1{
+        color: black;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    p{
+        color: rgb(225, 21, 21);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+    }
+    .menu {
+      background: #fafafa;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      width: 600px; /* bigger menu width */
+      padding: 30px 40px;
+    }
+
+    .menu h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #e63946; /* red accent */
+      font-size: 1.8em;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 0;
+      border-bottom: 1px solid #ddd;
+      font-size: 1.1em;
+    }
+
+    .menu-item:last-child {
+      border-bottom: none;
+    }
+
+    .item-info {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 500;
+    }
+
+    .item-info i {
+      color: #e63946; /* red icons */
+      font-size: 1.3em;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #000;
+      font-size: 1.1em;
+    }
+  </style>
+</head>
+
+<body>
+    <header>
+        <img src="img/las piramides.png" alt="logo of the store">
+    </header>
+
+    <main>
+        <h1>🍴 Menu :</h1>
+        <p>(con huevo,queso,mixto, patatas por dentro: 0.50€ MAS)</p>
+        <div class="menu">
+            <h2> solo</h2>
+
+            <div class="menu-item">
+              <div class="item-info">              
+                <span>🥙 Kebab solo </span>
+              </div>
+              <span class="price">3.50€</span>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-info">
+                <span>🌯 Dürüm solo</span>
+              </div>
+              <span class="price">4.50€</span>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-info">
+                <span>🍕 Pizza turca </span>
+              </div>
+              <span class="price">5.50€</span>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-info">
+                <span>🥤 Bebidas</span>
+              </div>
+              <span class="price">1.00€</span>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-info">
+                <span>🥤 cocacola,nestea,aquarius</span>
+              </div>
+              <span class="price">1.50€</span>
+            </div>
+        </div>
+        <div class="menu">
+            <h2> Menu</h2>
+
+            <div class="menu-item">
+              <div class="item-info">              
+                <span>🥙+🍟+🥤 Kebab </span>
+              </div>
+              <span class="price">4.50€</span>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-info">
+                <span>🌯+🍟+🥤 Dürüm </span>
+              </div>
+              <span class="price">5.50€</span>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-info">
+                <span>🍕+🍟+🥤 Pizza turca </span>
+              </div>
+              <span class="price">6.50€</span>
+            </div>
+        </div>
+        <div class="menu">
+            <h2> platos</h2>
+
+            <div class="menu-item">
+              <div class="item-info">              
+                <span><img src="img/take-away.png" alt="plato of 1.50euro" width="15px"> </span>
+              </div>
+              <span class="price">1.50€</span>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-info">
+                <span><img src="img/take-away.png" alt="plato of 2.50euro" width="25px"> </span>
+              </div>
+              <span class="price">2.50€</span>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-info">
+                <span><img src="img/take-away.png" alt="plato of 3.50euro" width="35px"> </span>
+              </div>
+              <span class="price">3.50€</span>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-info">
+                <span><img src="img/take-away.png" alt="plato of 5euro" width="43px"> </span>
+              </div>
+              <span class="price">5.00€</span>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-info">
+                <span><img src="img/take-away.png" alt="plato of 6euro" width="50px"> </span>
+              </div>
+              <span class="price">6.00€</span>
+            </div>
+        </div>
+        <div class="menu">
+            <h2> Patatas </h2>
+
+            <div class="menu-item">
+              <div class="item-info">              
+                <span><img src="img/fried-potatoes.png" alt="plato of 0.50euro" width="15px"> </span>
+              </div>
+              <span class="price">0.50€</span>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-info">
+                <span><img src="img/fried-potatoes.png" alt="plato of 1euro" width="25px"> </span>
+              </div>
+              <span class="price">1</span>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-info">
+                <span><img src="img/fried-potatoes.png" alt="plato of 2euro" width="35px"> </span>
+              </div>
+              <span class="price">2€</span>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-info">
+                <span><img src="img/fried-potatoes.png" alt="plato of 3euro" width="45px"> </span>
+              </div>
+              <span class="price">3.00€</span>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-info">
+                <span><img src="img/fried-potatoes.png" alt="plato of 4euro" width="55px"> </span>
+              </div>
+              <span class="price">4.00€</span>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
