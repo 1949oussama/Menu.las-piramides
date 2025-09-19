@@ -7,78 +7,85 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
-        font-family: 'Poppins', sans-serif;
-        background: #fff;
-        color: #333;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px; /* smaller space from page top */
-    }
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
 
+header img {
+    max-width: 320px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 35px;
+}
 
-    header img {
-        max-width: 320px;  /* bigger logo size */
-        width: 100%;
-        height: auto;
-        margin-bottom: 35px; /* space below logo */
-    }
-    h1{
-        color: black;
-        text-align: center;
-        margin-bottom: 100px;
-    }
-    p{
-        color: rgb(225, 21, 21);
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        text-align: center;
-    }
-    .menu {
-      background: #fafafa;
-      border-radius: 16px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-      width: 600px; /* bigger menu width */
-      padding: 30px 40px;
-    }
+h1 {
+    color: black;
+    text-align: center;
+    margin-bottom: 50px;
+}
 
-    .menu h2 {
-      text-align: center;
-      margin-bottom: 25px;
-      color: #e63946; /* red accent */
-      font-size: 1.8em;
-    }
+p {
+    color: rgb(225, 21, 21);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
 
-    .menu-item {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 0;
-      border-bottom: 1px solid #ddd;
-      font-size: 1.1em;
-    }
+.menu {
+    background: #fafafa;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
 
-    .menu-item:last-child {
-      border-bottom: none;
-    }
+.menu h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #e63946;
+    font-size: 1.5em;
+}
 
-    .item-info {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-weight: 500;
-    }
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 1em;
+    flex-wrap: wrap; /* allows items to wrap on small screens */
+}
 
-    .item-info i {
-      color: #e63946; /* red icons */
-      font-size: 1.3em;
-    }
+.menu-item:last-child {
+    border-bottom: none;
+}
 
-    .price {
-      font-weight: bold;
-      color: #000;
-      font-size: 1.1em;
-    }
-    /* MEDIA QUERY FOR SMALL SCREENS */
+.item-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    flex: 1; /* allows text to take available space */
+}
+
+.item-info i {
+    color: #e63946;
+    font-size: 1.2em;
+}
+
+.price {
+    font-weight: bold;
+    color: #000;
+    font-size: 1em;
+}
+
+/* MEDIA QUERY FOR SMALL SCREENS */
 @media (max-width: 480px) {
     h1 {
         font-size: 1.5em;
@@ -104,6 +111,7 @@
         align-self: flex-end;
     }
 }
+
   </style>
 </head>
 
@@ -256,4 +264,5 @@
     </main>
 </body>
 </html>
+
 
